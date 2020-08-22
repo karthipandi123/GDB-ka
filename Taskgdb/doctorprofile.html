@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Mirrored from gebo-admin-3.tzdthemes.com/wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Oct 2017 04:32:12 GMT -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello technologies </title>
+        <!-- Bootstrap framework -->
+        <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css" />
+        <!-- jQuery UI theme -->
+        <link rel="stylesheet" href="library/lib/jquery-ui/css/Aristo/Aristo.css" />
+        <!-- breadcrumbs -->
+        <link rel="stylesheet" href="library/lib/jBreadcrumbs/css/BreadCrumb.css" />
+        <!-- tooltips-->
+        <link rel="stylesheet" href="library/lib/qtip2/jquery.qtip.min.css" />
+        <!-- colorbox -->
+        <link rel="stylesheet" href="library/lib/colorbox/colorbox.css" />
+        <!-- code prettify -->
+        <link rel="stylesheet" href="library/lib/google-code-prettify/prettify.css" />
+        <!-- sticky notifications -->
+        <link rel="stylesheet" href="library/lib/sticky/sticky.css" />
+        <!-- aditional icons -->
+        <link rel="stylesheet" href="gallery/img/splashy/splashy.css" />
+        <!-- flags -->
+        <link rel="stylesheet" href="gallery/img/flags/flags.css" />
+        <!-- datatables -->
+        <link rel="stylesheet" href="library/lib/datatables/extras/TableTools/media/css/TableTools.css">
+        <!-- wizard -->
+        <link rel="stylesheet" href="library/lib/stepy/css/jquery.stepy.css" />
+        <!-- main styles -->
+        <link rel="stylesheet" href="library/css/style.css" />
+        <!-- theme color-->
+        <link rel="stylesheet" href="library/css/blue.css" id="link_theme" />
+        <!-- multiselect -->
+        <link rel="stylesheet" href="library/lib/multi-select/css/multi-select.css" />
+        <!-- enhanced select -->
+        <link rel="stylesheet" href="library/lib/chosen/chosen.css" />
+        <link rel="stylesheet" href="library/lib/timepicker/css/bootstrap-timepicker.css" />
+  <style>
+            .sidebar .panel-heading {
+                text-shadow: none; 
+            }
+        </style>
+    </head>
+    <body class="full_width">
+      
+        <div id="maincontainer" class="clearfix">
+            <header>
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="brand pull-centre" style="margin-left: 10px;" href="dashboard.html">Hello technologies</a>
+                            <a class="brand pull-centre" style="margin-left: 35%;" href=""><span id="currentinstitutionname"></span></a>
+                            <ul class="nav navbar-nav user_menu pull-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="gallery/img/user_avatar.png" alt="" class="user_avatar"> <span id="username"> </span> <b class="caret"></b></a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="user_profile.html">My Profile</a></li>
+                                        <li><a href="javascrip:void(0)">Help</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="login.html">Log Out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="contentwrapper">
+                <div class="main_content"> 
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <h3 class="heading">Employee Profile</h3>
+                            <div class="alert alert-danger" style="display: none;" id="patientfail">
+                            </div>
+                            <div class="alert alert-success" style="display: none;" id="patientsuccess">
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <form id="validate_wizard" class="stepy-wizzard form-horizontal">
+                                       
+                                            
+                                            <div class=" form-group">
+                                                <label for="doctoremail" class="col-md-2 control-label">First name</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" name="doctoremail" id="doctoremail" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <label for="doctorfname" class="col-md-2 control-label">Last Name</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" name="doctorfname" id="doctorfname" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <label for="doctormiddlename" class="col-md-2 control-label">Email id<span class="f_req">*</span></label>
+                                                <div class="col-md-8">
+                                                    <input type="text" name="doctormiddlename" id="doctormiddlename" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <label for="doctorlname" class="col-md-2 control-label">Mobile Number<span class="f_req">*</span></label>
+                                                <div class="col-md-8">
+                                                    <input type="number" name="doctorlname" id="doctorlname" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <label for="bloodsugar" class="col-md-2 control-label">Gender</label>
+                                                <div class="col-md-4">
+                                                    <label class="radio-inline">
+                                                        <input value="M" name="gender" id="gender" type="radio" checked>
+                                                        Male
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input value="F" name="gender" id="gender" type="radio">
+                                                        Female
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <label for="doctoradd" class="col-md-2 control-label">Address</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" name="doctoradd" id="doctoradd" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <label for="doctoraddress" class="col-md-2 control-label" >Password<span class="f_req">*</span></label>
+                                                <div class="col-md-8">
+                                                    <input name="doctoraddress" type="password"  id="doctoraddress" class="form-control" >
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <label for="doctorphoneno" class="col-md-2 control-label">Confirm password<span class="f_req">*</span></label>
+                                                <div class="col-md-8">
+                                                    <input type="password"  name="doctorphoneno" id="doctorphoneno"   class="form-control" />
+                                                </div>
+
+                                            </div>
+
+                                        <br>
+                                        <br>
+                                        <button type="submit" class="finish btn btn-primary"><i class="glyphicon glyphicon-ok"></i> Send registration</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <a href="javascript:void(0)" class="sidebar_switch on_switch bs_ttip" data-placement="auto right" data-viewport="body" title="Hide Sidebar">Sidebar switch</a>
+                        <div class="sidebar">
+            <div class="sidebar_inner_scroll">
+                <div class="sidebar_inner">
+                    <div id="side_accordion" class="panel-group">
+                       
+                       
+                        
+                      
+
+                        <!-- staff menu list -->
+                       
+                        <div class="panel panel-default" id="patientmanagement">
+                            <div class="panel-heading">
+                                <a href="#patient" style="background: rgb(57,147,186)" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+                                    <i class="glyphicon glyphicon-user"></i><font color="white"> Employee Management</font>
+                                </a>
+                            </div>
+                            <div class="accordion-body collapse in" id="patient">
+                                <div class="panel-body">
+                                    <ul class="nav nav-pills nav-stacked">
+                                        
+                                        <li><a href="userdash.html">User data Dashboard</a></li>
+                                        <li><a href="doctorprofile.html">Create User</a></li>
+                                        <li><a href="patientdocuploadview.html">Document Upload</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- doctor menu list -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <script src="library/js/jquery.min.js"></script>
+                <script src="library/js/jquery-migrate.min.js"></script>
+                <script src="library/lib/jquery-ui/jquery-ui-1.10.0.custom.min.js"></script>
+                <!-- touch events for jquery ui-->
+                <script src="library/js/forms/jquery.ui.touch-punch.min.js"></script>
+                <!-- easing plugin -->
+                <script src="library/js/jquery.easing.1.3.min.js"></script>
+                <!-- smart resize event -->
+                <script src="library/js/jquery.debouncedresize.min.js"></script>
+                <!-- js cookie plugin -->
+                <script src="library/js/jquery_cookie_min.js"></script>
+                <!-- main bootstrap js -->
+                <script src="library/bootstrap/js/bootstrap.min.js"></script>
+                <!-- bootstrap plugins -->
+                <script src="library/js/bootstrap.plugins.min.js"></script>
+                <!-- typeahead -->
+                <script src="library/lib/typeahead/typeahead.min.js"></script>
+                <!-- code prettifier -->
+                <script src="library/lib/google-code-prettify/prettify.min.js"></script>
+                <!-- sticky messages -->
+                <script src="library/lib/sticky/sticky.min.js"></script>
+                <!-- lightbox -->
+                <script src="library/lib/colorbox/jquery.colorbox.min.js"></script>
+                <!-- jBreadcrumbs -->
+                <script src="library/lib/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js"></script>
+                <!-- hidden elements width/height -->
+                <script src="library/js/jquery.actual.min.js"></script>
+                <!-- custom scrollbar -->
+                <script src="library/lib/slimScroll/jquery.slimscroll.js"></script>
+                <!-- fix for ios orientation change -->
+                <script src="library/js/ios-orientationchange-fix.js"></script>
+                <!-- to top -->
+                <script src="library/lib/UItoTop/jquery.ui.totop.min.js"></script>
+                <!-- mobile nav -->
+                <script src="library/js/selectNav.js"></script>
+                <!-- moment.js date library -->
+                <script src="library/lib/moment/moment.min.js"></script>
+                <!-- common functions -->
+                <script src="library/js/pages/gebo_common.js"></script>
+                <!-- validation -->
+                <script src="library/lib/validation/jquery.validate.min.js"></script>
+                <!-- wizard -->
+                <script src="library/lib/stepy/js/jquery.stepy.min.js"></script>
+                <!-- time picker -->
+                <script src="library/js/pages/gebo_forms.js"></script>
+                <script src="library/lib/timepicker/js/bootstrap-timepicker.min.js"></script>
+
+                <!-- doctor schedule table -->
+                <script src="library/lib/datatables/jquery.dataTables.min.js"></script>
+                <script src="library/lib/datatables/jquery.dataTables.sorting.js"></script>
+                <script src="library/lib/datatables/jquery.dataTables.bootstrap.min.js"></script>
+                <script src="library/js/pages/gebo_tables.js"></script>
+
+
+
+                <!-- custom scripts -->
+                <script src="library/js/pages/gebo_doctor_profile.js"></script>
+                <script src="js/redirection.js"></script>
+               
+
+
+
+                <script>
+                                            $(document).ready(function () {
+                                                vendorEditProfile();
+
+                                             
+                    
+                   
+          
+                 
+                </script>
+                </body>
+                </html>

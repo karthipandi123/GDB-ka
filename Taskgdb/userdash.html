@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Mirrored from gebo-admin-3.tzdthemes.com/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Oct 2017 04:26:41 GMT -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello Technologies</title>
+        <!-- Bootstrap framework -->
+        <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css" />
+        <!-- jQuery UI theme -->
+        <link rel="stylesheet" href="library/lib/jquery-ui/css/Aristo/Aristo.css" />
+        <!-- breadcrumbs -->
+        <link rel="stylesheet" href="library/lib/jBreadcrumbs/css/BreadCrumb.css" />
+        <!-- tooltips-->
+        <link rel="stylesheet" href="library/lib/qtip2/jquery.qtip.min.css" />
+        <!-- colorbox -->
+        <link rel="stylesheet" href="library/lib/colorbox/colorbox.css" />
+        <!-- code prettify -->
+        <link rel="stylesheet" href="library/lib/google-code-prettify/prettify.css" />
+        <!-- sticky notifications -->
+        <link rel="stylesheet" href="library/lib/sticky/sticky.css" />
+        <!-- aditional icons -->
+        <link rel="stylesheet" href="gallery/img/splashy/splashy.css" />
+        <!-- flags -->
+        <link rel="stylesheet" href="gallery/img/flags/flags.css" />
+        <!-- datatables -->
+        <link rel="stylesheet" href="library/lib/datatables/extras/TableTools/media/css/TableTools.css">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="library/img/font-awesome/css/font-awesome.min.css" />
+        <!-- calendar -->
+        <link rel="stylesheet" href="library/lib/fullcalendar/fullcalendar_gebo.css" />
+        <!-- main styles -->
+        <link rel="stylesheet" href="library/css/style.css" />
+        <!-- theme color-->
+        <link rel="stylesheet" href="library/css/blue.css" id="link_theme" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <style>
+            .sidebar .panel-heading {
+                text-shadow: none; 
+            }
+            
+            
+        </style>
+    </head>
+    <body class="full_width">
+        <div id="maincontainer" class="clearfix">
+
+            <header>
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="brand pull-centre" style="margin-left: 10px;" href="dashboard.html">Hello Technologies</a>
+                             <a class="brand pull-centre" style="margin-left: 35%;" href="">Demo Task</a>
+                            <a class="brand pull-centre" style="margin-left: 35%;" href=""><span id="currentinstitutionname"></span></a>
+                            <ul class="nav navbar-nav user_menu pull-right">
+								
+								<li class="divider-vertical hidden-sm hidden-xs"></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/user_avatar.png" alt="" class="user_avatar">Johny Smith <b class="caret"></b></a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="user_profile.html">My Profile</a></li>
+										<li><a href="javascrip:void(0)">Another action</a></li>
+										<li class="divider"></li>
+										<li><a href="login.html">Log Out</a></li>
+									</ul>
+								</li>
+							</ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="contentwrapper">
+                <div class="main_content">
+                    <div id="jCrumbs" class="breadCrumb module">
+                        <ul>
+                            <li>
+                                <a href="home.html"><i class="glyphicon glyphicon-home"></i></a>
+                            </li>
+                            <li>
+                                Dashboard
+                            </li>
+                        </ul>
+                    </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12 tac">
+                                                <ul class="ov_boxes">
+                                                    <li>
+                                                        <div class="p_bar_up p_canvas"><span>3</span></div>
+                                                        <div class="ov_text">
+                                                            <a href="#"> <strong>New Orders <span class="label label-info" style="font-size:15px;">306</span></strong></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="p_bar_down p_canvas"><span>20</span></div>
+                                                        <div class="ov_text">
+                                                            <a href="#"><strong>Total Expense  <span class="label label-danger" style="font-size:15px;">$56576</span></strong></a>
+                    
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="p_bar_up p_canvas"><span>3</span></div>
+                                                        <div class="ov_text">
+                                                            <a href="#"> <strong>Total Income <span class="label label-info" style="font-size:15px;">$123454</span></strong></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="p_bar_down p_canvas"><span>20</span></div>
+                                                        <div class="ov_text">
+                                                            <a href="#"><strong>New Users <span class="label label-danger" style="font-size:15px;">154</span> </strong></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                    
+                    
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="dshb_icoNav clearfix">
+                                                    <li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/multi-agents.png)"><span class="label label-info">+10</span> Users</a></li>
+                                                    <li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/world.png)">Map</a></li>
+                                                    <li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/configuration.png)">Settings</a></li>
+                                                    <li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/lab.png)">Lab</a>
+                                                    </li><li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/van.png)"><span class="label label-success">$2851</span> Delivery</a></li>
+                                                    <li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/pie-chart.png)">Charts</a></li>
+                                                    <li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/edit.png)">Add New Article</a></li>
+                                                    <li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/add-item.png)"> Add New Page</a></li>
+                                                    <li><a href="javascript:void(0)" style="background-image: url(gallery/img/gCons/chat-.png)"><span class="label label-danger">26</span> Comments</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                    
+                                        <div class="row">
+                                              <div class="col-sm-12 col-lg-12">
+			<div class="heading clearfix">
+				<h3 class="pull-left">Latest Orders</h3>
+				<span class="pull-right label label-danger">5 Orders</span>
+			</div>
+			<table class="table table-striped table-bordered mediaTable">
+				<thead>
+					<tr>
+						<th class="optional">id</th>
+						<th class="essential persist">Customer</th>
+						<th class="optional">Status</th>
+						<th class="optional">Date Added</th>
+						<th class="essential">Total</th>
+						<th class="essential">Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>134</td>
+						<td>Summer Throssell</td>
+						<td>Pending</td>
+						<td>24/04/2015</td>
+						<td>$120.23</td>
+						<td>
+							<a href="#" title="Edit"><i class="splashy-document_letter_edit"></i></a>
+							<a href="#" title="Accept"><i class="splashy-document_letter_okay"></i></a>
+							<a href="#" title="Remove"><i class="splashy-document_letter_remove"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>133</td>
+						<td>Declan Pamphlett</td>
+						<td>Pending</td>
+						<td>23/04/2015</td>
+						<td>$320.00</td>
+						<td>
+							<a href="#" title="Edit"><i class="splashy-document_letter_edit"></i></a>
+							<a href="#" title="Accept"><i class="splashy-document_letter_okay"></i></a>
+							<a href="#" title="Remove"><i class="splashy-document_letter_remove"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>132</td>
+						<td>Erin Church</td>
+						<td>Pending</td>
+						<td>23/04/2015</td>
+						<td>$44.00</td>
+						<td>
+							<a href="#" title="Edit"><i class="splashy-document_letter_edit"></i></a>
+							<a href="#" title="Accept"><i class="splashy-document_letter_okay"></i></a>
+							<a href="#" title="Remove"><i class="splashy-document_letter_remove"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>131</td>
+						<td>Koby Auld</td>
+						<td>Pending</td>
+						<td>22/04/2015</td>
+						<td>$180.20</td>
+						<td>
+							<a href="#" title="Edit"><i class="splashy-document_letter_edit"></i></a>
+							<a href="#" title="Accept"><i class="splashy-document_letter_okay"></i></a>
+							<a href="#" title="Remove"><i class="splashy-document_letter_remove"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>130</td>
+						<td>Anthony Pound</td>
+						<td>Pending</td>
+						<td>20/04/2015</td>
+						<td>$610.42</td>
+						<td>
+							<a href="#" title="Edit"><i class="splashy-document_letter_edit"></i></a>
+							<a href="#" title="Accept"><i class="splashy-document_letter_okay"></i></a>
+							<a href="#" title="Remove"><i class="splashy-document_letter_remove"></i></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+                                            
+                                
+                </div>
+                    <div class="row">
+                                            <div class="col-sm-12 col-lg-12">
+                                                <div class="heading clearfix">
+                                                    <h3 class="pull-left">User task</h3>
+                                                    <span class="pull-right label label-danger">15</span>
+                                                </div>
+                                                
+                    <div> 
+Number of work package=
+    <input id="zeilen" type="text" />
+    <input id="makeTable" type="button" value="Create table" />
+    <input id="random" type="button" value="Test values" />
+</div>
+                                                <br>
+<table class="table table-striped table-bordered mediaTable">
+    <thead>
+          <tr>
+              <td T &uml;Activity</td>
+              <td>Duration</td>
+              <td>Prev &uml;Next</td>
+              <td>DOES</td>
+              <td>DID</td>
+              <td>READ</td>
+              <td>WRITE</td>
+              <td>TASK</td>
+          </tr>
+    </thead>
+    <tbody id="myTable">
+    </tbody>
+</table>
+                        </div>
+                    </div>
+
+                <a href="javascript:void(0)" class="sidebar_switch on_switch bs_ttip" data-placement="auto right" data-viewport="body" title="Hide Sidebar">Sidebar switch</a>
+                <br>
+                <div class="sidebar">
+                    <div class="sidebar_inner_scroll">
+                        <div class="sidebar_inner">
+                            <div id="side_accordion" class="panel-group">
+                                <div class="sidebar_inner_scroll">
+                <div class="sidebar_inner">
+                    <div id="side_accordion" class="panel-group">
+                       
+                       
+                        
+                      
+
+                        <!-- staff menu list -->
+                       
+                        <div class="panel panel-default" id="patientmanagement">
+                            <div class="panel-heading">
+                                <a href="#patient" style="background: rgb(57,147,186)" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+                                    <i class="glyphicon glyphicon-user"></i><font color="white"> Employee Management</font>
+                                </a>
+                            </div>
+                            <div class="accordion-body collapse in" id="patient">
+                                <div class="panel-body">
+                                    <ul class="nav nav-pills nav-stacked">
+                                        
+                                        <li><a href="userdash.html">User data Dashboard</a></li>
+                                        <li><a href="doctorprofile.html">Create User</a></li>
+                                        <li><a href="patientdocuploadview.html">Document Upload</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- doctor menu list -->
+                        
+                    </div>
+                </div>
+            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+                
+                
+            <script src="library/js/jquery.min.js"></script>
+            <script src="library/js/jquery-migrate.min.js"></script>
+            <script src="library/lib/jquery-ui/jquery-ui-1.10.0.custom.min.js"></script>
+            <!-- touch events for jquery ui-->
+            <script src="library/js/forms/jquery.ui.touch-punch.min.js"></script>
+            <!-- easing plugin -->
+            <script src="library/js/jquery.easing.1.3.min.js"></script>
+            <!-- smart resize event -->
+            <script src="library/js/jquery.debouncedresize.min.js"></script>
+            <!-- js cookie plugin -->
+            <script src="library/js/jquery_cookie_min.js"></script>
+            <!-- main bootstrap js -->
+            <script src="library/bootstrap/js/bootstrap.min.js"></script>
+            <!-- bootstrap plugins -->
+            <script src="library/js/bootstrap.plugins.min.js"></script>
+            <!-- typeahead -->
+            <script src="library/lib/typeahead/typeahead.min.js"></script>
+            <!-- code prettifier -->
+            <script src="library/lib/google-code-prettify/prettify.min.js"></script>
+            <!-- sticky messages -->
+            <script src="library/lib/sticky/sticky.min.js"></script>
+            <!-- lightbox -->
+            <script src="library/lib/colorbox/jquery.colorbox.min.js"></script>
+            <!-- jBreadcrumbs -->
+            <script src="library/lib/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js"></script>
+            <!-- hidden elements width/height -->
+            <script src="library/js/jquery.actual.min.js"></script>
+            <!-- custom scrollbar -->
+            <script src="library/lib/slimScroll/jquery.slimscroll.js"></script>
+            <!-- fix for ios orientation change -->
+            <script src="library/js/ios-orientationchange-fix.js"></script>
+            <!-- to top -->
+            <script src="library/lib/UItoTop/jquery.ui.totop.min.js"></script>
+            <!-- mobile nav -->
+            <script src="library/js/selectNav.js"></script>
+            <!-- moment.js date library -->
+            <script src="library/lib/moment/moment.min.js"></script>
+            <!-- common functions -->
+            <script src="library/js/pages/gebo_common.js"></script>
+            <!-- multi-column layout -->
+            <script src="library/js/jquery.imagesloaded.min.js"></script>
+            <script src="library/js/jquery.wookmark.js"></script>
+            <!-- responsive table -->
+            <script src="library/js/jquery.mediaTable.min.js"></script>
+            <!-- sortable/filterable list -->
+            <script src="library/lib/list_js/list.min.js"></script>
+            <script src="library/lib/list_js/plugins/paging/list.paging.min.js"></script>
+            <!-- dashboard functions -->
+            <script src="library/js/pages/gebo_dashboard.js"></script>
+        <!-- small charts -->
+	<script src="js/jquery.peity.min.js"></script>
+	<!-- charts -->
+	<script src="lib/flot/jquery.flot.min.js"></script>
+    <script src="lib/flot/jquery.flot.resize.min.js"></script>
+    <script src="lib/flot/jquery.flot.pie.min.js"></script>
+	<script src="lib/flot.tooltip/jquery.flot.tooltip.min.js"></script>
+
+
+
+            <!-- custom scripts -->
+            <script src="js/authentication.js"></script>
+            <script src='js/redirection.js'></script>
+            <script src='js/usrdetails.js'></script>
+
+            <script>
+                                        $(document).ready(function () {
+                                            vendorEditProfile();
+                                        });
+                
+                
+                var element = {
+    zeilen : document.getElementById("zeilen"),
+    table : document.getElementById("myTable"),
+    makeTable : document.getElementById("makeTable"),
+    random : document.getElementById("random"),
+};
+
+var generate = function() {
+    element.table.innerHTML = '';
+    var zeilen = parseInt(element.zeilen.value);
+    for(var i = 0; i < zeilen; i++) {
+        var row = element.table.insertRow(i);
+        for(var j = 0; j < 8; j++) {
+            var cell = row.insertCell(j);
+            cell.innerHTML = (i + 1) + ', ' + (j + 1);
+        }
+    }
+}
+
+element.makeTable.addEventListener('click', generate);
+
+element.random.addEventListener('click', function makeTable() {
+    element.zeilen.value = Math.round(Math.random() * 10);
+    generate();
+});
+                
+            </script>
+    </body>
+</html>

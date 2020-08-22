@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="Images/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="library/css/cns_styles.css">    
+        <link rel="stylesheet" type="text/css" href="library/css/font-awesome.css"> 
+        <link rel="stylesheet" type="text/css" href="library/css/bootstrap.min.css">
+        <link rel="stylesheet" href="library/css/font-awesome.css" />
+        <script src="library/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Bootstrap framework -->
+        <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css" />
+        <!-- theme color-->
+        <link rel="stylesheet" href="library/css/blue.css" />
+        <!-- tooltip -->    
+        <link rel="stylesheet" href="library/lib/qtip2/jquery.qtip.min.css" />
+        <!-- main styles -->
+        <link rel="stylesheet" href="library/css/style.css" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+
+
+        <script src="library/js/jquery.min.js"></script>
+        <script src="library/javascript/bootstrap.min.js"></script>
+        <script src="library/lib/validation/jquery.validate.min.js"></script>
+        
+        <style>
+            .top{
+                height: 15%;
+                background-color: #0093D9;
+                border-bottom: 5px solid #0093D9;
+            }
+
+            .bottom{
+                height: 85%;
+                width: 70%;
+                background-color: -webkit-linear-gradient(top, rgba(238,238,238,0.5) 0%,rgba(204,204,204,0.2) 100%);
+                margin: auto;
+                border: 3px solid #0093D9;
+                padding: 10px;
+                margin-top: 50px;
+            }
+
+            html,body{
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="top col-sm-12 col-xs-12">
+                    
+
+                    <div class="col-sm-9 col-xs-12">
+                        <p style="font-size: 30px; color: white; margin-left: 10px; margin-top: 15px;" id="companyName">Hello Technologies Private Limited</p>
+                        <!--                        <p style="font-size: 18px; color: white; margin-left: 10px; margin-top: 5px; " id="companyNorm">nice - neonatal intensive care equipment</p>-->
+                    </div>
+                </div>   
+            </div>
+            <br>
+            <br>
+            <br>
+           
+            <div class="bottom form-login row">
+                <div class="col-sm-12" >
+                    <div class="col-sm-7" style="margin: 0px; padding: 0px;">
+                        <img src="gallery/welcome-image.jpg" alt="nice Neo Tech" class="img-responsive" />
+                    </div>
+
+                    <div class="col-sm-5">
+                        <h2 class="sub-head-w3-agileits">Sign in</h2>
+                        <form  method="post" action="doctorprofile.html" name="ContactForm" id="ContactForm1">
+                            <div class="login-form">			
+                                <!--<form>-->
+                                <div class="input">
+                                    <i class="glyphicon glyphicon-user" aria-hidden="true"></i> <input type="text" name="email"  class="span6" required="required" id="adminusername" placeholder="Email *"/>
+                                    
+                                </div>
+                                <div class="input">
+                                    <i class="glyphicon glyphicon-lock" aria-hidden="true"></i> <input type="password" name="password" placeholder="Password" required="required" id="password"/>
+                                </div>
+                                <div class="col-sm-6" style="margin-top: 20px;">
+                                    <label class="checkbox"><input type="checkbox" name="checkbox" checked="">Remember me</label>
+                                </div>
+                                <div class="col-sm-6" style="text-align: center; margin-top: 20px;">
+                                    <a class="forgot" href="#">Forgot Password?</a>
+                                </div>
+                                <div class="col-sm-12" style="margin-top: 25px;">
+                                    <input type="submit"  name="buttn" value="Sign in" >
+                                     
+                                </div>
+                                <!--</form>-->
+                            </div>
+                        </form>
+                        
+                       
+                        
+                        
+                    </div>
+                </div>                              
+            </div>
+            <div class="col-sm-12" style="margin-top: 50px;">
+                <p style="color: black; text-align: center;">Copyright &copy; 2020 Hello Pvt Ltd. All rights reserved.</p>
+            </div>             
+        </div>
+        <script src="js/authentication.js"></script>
+    </body>
+</html>
